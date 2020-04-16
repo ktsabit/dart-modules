@@ -28,10 +28,10 @@ String addf(var a, var b) {
 		print("#DEBUG//ua$ua ub$ub la$la lb$lb cl$cl ca$ca");	
 		int nca = ca ~/ fpb(ca,cl);
 		int ncl = cl ~/ fpb(ca,cl);
-		return "$ca/$cl";	
+		return "$nca/$ncl";	
 	} else {
 		ca = ua + ub;
-		cl = la + lb;
+		cl = la;
 		int nca = ca ~/ fpb(ca,cl);
 		int ncl = cl ~/ fpb(ca,cl);
 		return "$nca/$ncl";
