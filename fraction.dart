@@ -2,8 +2,8 @@ import 'maths.dart';
 
 
 void main() {
-	String a = "2/3";
-	String b = "5/4";
+	String a = "2/10";
+	String b = "3/10";
 
 	print(addf(a, b));
 }
@@ -24,10 +24,11 @@ String addf(var a, var b) {
 		// print(cl);
 		// int nua = ua * (cl ~/ ub);
 		// int nub = ub * (cl ~/ ua);
-		int ca = (ua * (cl ~/ ub)) + (ub * (cl ~/ ua));
+		int ca = (ua * (cl ~/ la)) + (ub * (cl ~/ lb));
+		print("#DEBUG//ua$ua ub$ub la$la lb$lb cl$cl ca$ca");	
 		int nca = ca ~/ fpb(ca,cl);
 		int ncl = cl ~/ fpb(ca,cl);
-		return "$nca/$ncl";	
+		return "$ca/$cl";	
 	} else {
 		ca = ua + ub;
 		cl = la + lb;
